@@ -2,7 +2,7 @@
   "name": "wundergrounded",
   "version": "0.1.0",
   "description": "",
-  "main": "src/wundergrounded.js",
+  "main": "lib/wundergrounded.js",
   "scripts": {
     "test": "make test"
   },
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "limiter": "^1.0.5",
-    "node-cache": "^2.1.1"
+    "node-cache": "^2.1.1",
+    "request": "^2.55.0"
   }
 }
