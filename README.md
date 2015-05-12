@@ -14,8 +14,6 @@ A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use
 
 ###Initialization
 
-
-The code below shows how to create a barebones Wundergrounded instance:
 ```javascript
 var Wundergrounded = require('wundergrounded');
 var wundergrounded = new Wundergrounded();
