@@ -79,31 +79,15 @@ Note that when bundling requests, the [request()](api-request) call is what ulti
 
 
   <a name="api-cache"></a>
-  - **cache([secondsInCache], [secondsBetweenChecks])**
-    
-    Configures your Wundergrounded client to cache responses that are received from the Weather Underground API.
-    
+  - **cache([secondsInCache], [secondsBetweenChecks])** Configures your Wundergrounded client to cache responses that are received from the Weather Underground API.
     - secondsInCache - *(optional)* Number of seconds to keep responses in the cache. Defaults to 300.
     - secondsBetweenChecks - *(optional)* Number of seconds between eviction checks. Defaults to 30.
-    
-    ```javascript
-    // Configure a new instance with default caching values
-    var wundergrounded = new Wundergrounded().cache();
-    ```
 
 
   <a name="api-limit"></a>
-  - **limit([numberPer], [timePeriod])**
-    
-    Configures your Wundergrounded client to limit the number of requests it makes to the Weather Underground API. This uses [limiter](https://github.com/jhurliman/node-rate-limiter) under the hood and accepts similar parameters.
-    
+  - **limit([numberPer], [timePeriod])** Configures your Wundergrounded client to limit the number of requests it makes to the Weather Underground API. This uses [limiter](https://github.com/jhurliman/node-rate-limiter) under the hood and accepts similar parameters.
     - numberPer - *(optional)* Number of requests to make per the specified time period. Defaults to 10.
     - timePeriod - *(optional)* The time period to use when limiting (i.e. 'second', 'minute', 'hour', 'day'). Defaults to 'minute'.
-    
-     ```javascript
-    // Configure a new instance with default limit values
-    var wundergrounded = new Wundergrounded().limit();
-    ```
 
 
 #### Feature functions
