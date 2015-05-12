@@ -3,13 +3,13 @@
 A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use interface. Offers optional request bundling, rate limiting, and caching of responses (all in the name of cutting down on the overall number of HTTP requests). Heavily inspired by [wundernode](https://github.com/evalcrux/wundernode) and [wundergroundnode](https://github.com/cendrizzi/wundergroundnode).
 
 
-
+<br>
 ##Installation
 
 ```npm install wundergrounded --save```
 
 
-
+<br>
 ##Usage
 
 ###Initialization
@@ -65,6 +65,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 ```
 
 
+<br>
 ## API docs
 
 #### Initialization functions
@@ -85,7 +86,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *numberPer* - (optional) Number of requests to make per the specified time period. Defaults to 10.
     * *timePeriod* - (optional) The time period to use when limiting (i.e. 'second', 'minute', 'hour', 'day'). Defaults to 'minute'.
   
-  
+
 #### Feature functions
 
 
@@ -188,6 +189,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *callback* - (optional) A callback function to invoke once a response is received.
 
 
+<br>
  ## Release history
 
-  - 0.1.0 Initial release
+  * 0.1.0 Initial release
