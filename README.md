@@ -66,7 +66,6 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
   }
 });
 ```
-Note that when bundling requests, the [request()](api-request) call is what ultimately executes the request and retrieves data.
 
 
 ## API docs
