@@ -42,7 +42,7 @@ var wundergrounded = new Wundergrounded().cache().limit();
 
 ### Getting data
 
-##### Making a request for a single feature
+**Making a request for a single feature //**
 If you just need one feature for a specific location (i.e. current conditions for 27705):
 ```javascript
 wundergrounded.conditions('27705', function(error, response) {
@@ -54,8 +54,7 @@ wundergrounded.conditions('27705', function(error, response) {
 });
 ```
 
-<a name="bundled-request-example"></a>
-##### Making a bundled request for multiple features
+**Making a bundled request for multiple features //**
 If you need more than one feature for a specific location (i.e. current conditions, hourly forecast, and the 10-day forecast for 27705):
 ```javascript
 wundergrounded.conditions().hourly().forecast10day().request('27705', function(error, response) {
@@ -73,13 +72,13 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 #### Initialization functions
   
   
-  * **cache([secondsInCache], [secondsBetweenChecks])**
+  * **cache([secondsInCache], [secondsBetweenChecks]) //**
     Configures your Wundergrounded client to cache responses that are received from the Weather Underground API.
     * *secondsInCache* - (optional) Number of seconds to keep responses in the cache. Defaults to 300.
     * *secondsBetweenChecks* - (optional) Number of seconds between eviction checks. Defaults to 30.
   
   
-  * **limit([numberPer], [timePeriod])**
+  * **limit([numberPer], [timePeriod]) //**
     Configures your Wundergrounded client to limit the number of requests it makes to the Weather Underground API. This uses [limiter](https://github.com/jhurliman/node-rate-limiter) under the hood and accepts similar parameters.
     * *numberPer* - (optional) Number of requests to make per the specified time period. Defaults to 10.
     * *timePeriod* - (optional) The time period to use when limiting (i.e. 'second', 'minute', 'hour', 'day'). Defaults to 'minute'.
