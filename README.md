@@ -14,28 +14,26 @@ A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use
 
 ###Initialization
 
+
 The code below shows how to create a barebones Wundergrounded instance:
 ```javascript
 var Wundergrounded = require('wundergrounded');
 var wundergrounded = new Wundergrounded();
 ```
 
-
-#####Enabling caching
-To enable caching of the responses recieved from Weather Underground's API, you would do the following:
+Interested in **caching** responses from Weather Underground?
 ```javascript
+var Wundergrounded = require('wundergrounded');
 // Configure a new instance with default caching values
 var wundergrounded = new Wundergrounded().cache();
 ```
-See the [cache()](api-cache) API documentation below for more information and configuration options.
 
-#####Enabling rate-limiting
-Depending on your plan, Weather Underground limits the number of requests you can make to their API. To create an instance that will automatically limit the number of requests you send to them:
+How about **rate limiting** the number of requests your app will make to the Weather Underground API?
 ```javascript
+var Wundergrounded = require('wundergrounded');
 // Configure a new instance with default limit values
 var wundergrounded = new Wundergrounded().limit();
 ```
-See the [limit()](api-limit) API documentation below for more information and configuration options.
 
 ##### Enabling both
 Create a new instance with both rate limiting and caching enabled:
