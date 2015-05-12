@@ -42,8 +42,7 @@ var wundergrounded = new Wundergrounded().cache().limit();
 
 ### Getting data
 
-**Making a request for a single feature //**
-If you just need one feature for a specific location (i.e. current conditions for 27705):
+**Making a request for a single feature** can be done similar to what's below (current conditions for 27705):
 ```javascript
 wundergrounded.conditions('27705', function(error, response) {
   if(!error) {
@@ -54,8 +53,7 @@ wundergrounded.conditions('27705', function(error, response) {
 });
 ```
 
-**Making a bundled request for multiple features //**
-If you need more than one feature for a specific location (i.e. current conditions, hourly forecast, and the 10-day forecast for 27705):
+**Making a bundled request for multiple features** for a specific location can be done by similar to the syntax below (current conditions, hourly forecast, and the 10-day forecast for 27705):
 ```javascript
 wundergrounded.conditions().hourly().forecast10day().request('27705', function(error, response) {
   if(!error) {
