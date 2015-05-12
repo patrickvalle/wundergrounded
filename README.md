@@ -28,16 +28,16 @@ var Wundergrounded = require('wundergrounded');
 var wundergrounded = new Wundergrounded().cache();
 ```
 
-How about **rate limiting** the number of requests your app will make to the Weather Underground API?
+What about **rate limiting** the number of requests your app will make to the Weather Underground API?
 ```javascript
 var Wundergrounded = require('wundergrounded');
 // Configure a new instance with default limit values
 var wundergrounded = new Wundergrounded().limit();
 ```
 
-##### Enabling both
-Create a new instance with both rate limiting and caching enabled:
+But I'd like to do **both**.
 ```javascript
+var Wundergrounded = require('wundergrounded');
 // Configure a new instance with caching and limiting enabled
 var wundergrounded = new Wundergrounded().cache().limit();
 ```
