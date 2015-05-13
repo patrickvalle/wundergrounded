@@ -1,6 +1,8 @@
 # Wundergrounded
 
-A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use interface. Offers optional request bundling, rate limiting, and caching of responses (all in the name of cutting down on the overall number of HTTP requests). Heavily inspired by [wundernode](https://github.com/evalcrux/wundernode) and [wundergroundnode](https://github.com/cendrizzi/wundergroundnode).
+A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use interface. Offers optional request bundling, rate limiting, and caching of responses (all in the name of cutting down on the overall number of HTTP requests). 
+
+Heavily inspired by [wundernode](https://github.com/evalcrux/wundernode) and [wundergroundnode](https://github.com/cendrizzi/wundergroundnode).
 
 
 <br>
@@ -90,7 +92,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 #### Feature functions
 
 
-**Note:** All of Wundergrounded's "feature functions" that retrieve Weather Underground API data are chainable. All chained API calls get bundled together on one request, which reduces overall network traffic (and, consequently, the number of requests you make to Weather Underground.) You can read more about combining requests from [Weather Underground's API docs](http://www.wunderground.com/weather/api/d/docs?d=data/index#standard_request_url_format), or see an example of this chainability above in the ["Making a bundled request for multiple features"](bundled-request-example) section.
+**Note:** All of Wundergrounded's "feature functions" that retrieve Weather Underground API data are chainable. All chained API calls get bundled together on one request, which reduces overall network traffic (and, consequently, the number of requests you make to Weather Underground.) You can read more about combining requests from [Weather Underground's API docs](http://www.wunderground.com/weather/api/d/docs?d=data/index#standard_request_url_format), or see an example of this chainability above in the "Making a bundled request for multiple features" section.
 
 
 **Note:** Only supply the ```query``` and ```callback``` parameters to these functions if you don't plan on chaining (bundling) requests.
@@ -211,4 +213,4 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 ## Release history
 
   * 0.1.0 Initial release
-  * 0.1.1 Minor updates to README
+  * 0.1.3 Minor updates to README
