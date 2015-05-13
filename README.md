@@ -1,18 +1,18 @@
-#Wundergrounded
+# Wundergrounded
 
 A Node.js module that wraps Weather Underground API's in a flexible, easy-to-use interface. Offers optional request bundling, rate limiting, and caching of responses (all in the name of cutting down on the overall number of HTTP requests). Heavily inspired by [wundernode](https://github.com/evalcrux/wundernode) and [wundergroundnode](https://github.com/cendrizzi/wundergroundnode).
 
 
 <br>
-##Installation
+## Installation
 
 ```npm install wundergrounded --save```
 
 
 <br>
-##Usage
+## Usage
 
-###Initialization
+### Initialization
 
 ```javascript
 var Wundergrounded = require('wundergrounded');
@@ -53,7 +53,7 @@ wundergrounded.conditions('27705', function(error, response) {
 });
 ```
 
-**Making a bundled request for multiple features** for a specific location can be done by similar to the syntax below (current conditions, hourly forecast, and the 10-day forecast for 27705):
+**Making a bundled request for multiple features** and a specific location can be done by similar to the syntax below (current conditions, hourly forecast, and the 10-day forecast for 27705):
 ```javascript
 wundergrounded.conditions().hourly().forecast10day().request('27705', function(error, response) {
   if(!error) {
@@ -184,7 +184,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *callback* - (optional) A callback function to invoke once a response is received.
     
   * **request(query, callback)**
-    Function for actually "firing" off an HTTP request to the Weather Underground API- used when chaining (bundling) multiple features on one call. An example of it being used can be found in the [Making a bundled request for multiple features](bundled-request-example) section above.
+    Function for actually "firing" off an HTTP request to the Weather Underground API- used when chaining (bundling) multiple features on one call. An example of it being used can be found in the "Making a bundled request for multiple features" section above.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
@@ -193,3 +193,4 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 ## Release history
 
   * 0.1.0 Initial release
+  * 0.1.1 Minor updates to README
