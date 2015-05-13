@@ -92,6 +92,7 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 
 **Note:** All of Wundergrounded's "feature functions" that retrieve Weather Underground API data are chainable. All chained API calls get bundled together on one request, which reduces overall network traffic (and, consequently, the number of requests you make to Weather Underground.) You can read more about combining requests from [Weather Underground's API docs](http://www.wunderground.com/weather/api/d/docs?d=data/index#standard_request_url_format), or see an example of this chainability above in the ["Making a bundled request for multiple features"](bundled-request-example) section.
 
+
 **Note:** Only supply the ```query``` and ```callback``` parameters to these functions if you don't plan on chaining (bundling) requests.
 
 
@@ -100,40 +101,48 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
+
   * **almanac([query], [callback])**
     Refer to Weather Underground's [almanac](http://www.wunderground.com/weather/api/d/docs?d=data/almanac) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
 
   * **astronomy([query], [callback])**
     Refer to Weather Underground's [astronomy](http://www.wunderground.com/weather/api/d/docs?d=data/astronomy) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
+
   * **conditions([query], [callback])**
     Refer to Weather Underground's [conditions](http://www.wunderground.com/weather/api/d/docs?d=data/conditions) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
 
   * **currenthurricane([query], [callback])**
     Refer to Weather Underground's [currenthurricane](http://www.wunderground.com/weather/api/d/docs?d=data/currenthurricane) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
+
   * **forecast([query], [callback])**
     Refer to Weather Underground's [forecast](http://www.wunderground.com/weather/api/d/docs?d=data/forecast) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
 
   * **forecast10day([query], [callback])**
     Refer to Weather Underground's [forecast10day](http://www.wunderground.com/weather/api/d/docs?d=data/forecast10day) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
+
   * **geolookup([query], [callback])**
     Refer to Weather Underground's [geolookup](http://www.wunderground.com/weather/api/d/docs?d=data/geolookup) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
 
   * **history(date, [query], [callback])**
     Refer to Weather Underground's [history](http://www.wunderground.com/weather/api/d/docs?d=data/history) documentation for info on this feature.
@@ -141,15 +150,18 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
 
+
   * **hourly([query], [callback])**
     Refer to Weather Underground's [hourly](http://www.wunderground.com/weather/api/d/docs?d=data/hourly) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **hourly10day([query], [callback])**
     Refer to Weather Underground's [hourly10day](http://www.wunderground.com/weather/api/d/docs?d=data/hourly10day) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **planner(start, end, [query], [callback])**
     Refer to Weather Underground's [planner](http://www.wunderground.com/weather/api/d/docs?d=data/planner) documentation for info on this feature.
@@ -157,31 +169,37 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
     * *end* - The end [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **rawtide([query], [callback])**
     Refer to Weather Underground's [rawtide](http://www.wunderground.com/weather/api/d/docs?d=data/rawtide) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **satellite([query], [callback])**
     Refer to Weather Underground's [satellite](http://www.wunderground.com/weather/api/d/docs?d=data/satellite) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **tide([query], [callback])**
     Refer to Weather Underground's [tide](http://www.wunderground.com/weather/api/d/docs?d=data/tide) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **webcams([query], [callback])**
     Refer to Weather Underground's [webcams](http://www.wunderground.com/weather/api/d/docs?d=data/webcams) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **yesterday([query], [callback])**
     Refer to Weather Underground's [yesterday](http://www.wunderground.com/weather/api/d/docs?d=data/yesterday) documentation for info on this feature.
     * *query* - (optional) The query to send to the Weather Underground API.
     * *callback* - (optional) A callback function to invoke once a response is received.
+
     
   * **request(query, callback)**
     Function for actually "firing" off an HTTP request to the Weather Underground API- used when chaining (bundling) multiple features on one call. An example of it being used can be found in the "Making a bundled request for multiple features" section above.
