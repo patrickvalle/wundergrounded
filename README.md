@@ -212,5 +212,6 @@ wundergrounded.conditions().hourly().forecast10day().request('27705', function(e
 <br>
 ## Release history
 
-  * 0.1.0 Initial release
+  * 0.1.4 Fixing race condition in limited requests
   * 0.1.3 Minor updates to README
+  * 0.1.0 Initial release
